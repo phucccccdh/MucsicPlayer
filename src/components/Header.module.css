@@ -1,0 +1,39 @@
+.main {
+    height: 50px;
+    background-color: blue;
+    display: flex;
+    justify-content: flex-start;
+    padding: 10px 10px;
+}
+.logo {
+    height: 36px;
+    width: 108px;
+    background-image: url(./img/logo.png);
+}
+.prop {
+    height: 100%;
+    width: auto;
+    text-align: center; 
+    flex-basis: 7%;
+    margin-top: 5px;
+}
+.prop:hover, span:hover {
+    color: aqua;
+    cursor: pointer;
+}
+
+.form {
+    text-align: center; 
+    flex-basis: 30%;
+}
+
+.form input {
+    height: 25px;
+    margin-top: 3px;
+}
+/* span {
+    margin-top: 3px;
+} */
+
+
+

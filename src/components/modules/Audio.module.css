@@ -1,0 +1,42 @@
+.container {
+    margin: 10px 5px;
+    height: 60px;
+    width: 98%;
+    display: flex;
+    justify-content:flex-start;
+    border: 1px solid rgba(45, 52, 54,1.0);
+    border-radius: 10px;
+    background-color: white;
+}
+
+.container span {
+    display: block;  
+    align-self: center;
+    float: left;
+    margin: 0px 10px;
+}
+
+.index {
+    flex-basis: 2%;
+}
+.avatar {
+    flex-basis: 5%;
+    line-height: 7px;
+}
+.name {
+    flex: 1;
+    color:brown;
+    cursor: pointer;
+}
+.artist {
+    flex-basis: 40%;
+}
+.time {
+    flex-basis: 10%;
+}
+.container .icon {
+    flex-basis: 5%;
+    cursor: pointer;
+    justify-self: end;
+}
+

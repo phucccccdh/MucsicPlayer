@@ -1,38 +1,108 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
   }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  .app {
+    padding: 30px 10px;
+    /* border: 1px solid red;
+    border-radius: 2%; */
+    height: 780px;
+    width: auto;
+    display: flex;
+    background-color: #34495e;
+    
   }
-  to {
-    transform: rotate(360deg);
+
+  .wrapper_left {
+    margin: 0px 2px;
+    border: 1px solid #34495e;
+    border-radius: 4%;
+    height: 100%;
+    width: 60%;
+    background-color: rgba(162, 155, 254,1.0);
   }
-}
+  .title-h2 {
+    margin: 5px 10px;
+    border-bottom: 1px solid #34495e;
+    height: 60px;
+    line-height: 60px;
+  }
+  .wrapper_left ul {
+    list-style-type: none;
+    margin-left: 5px;
+  }
+
+  .wrapper_right {
+    margin: 0px 2px;
+    border: 1px solid #34495e;
+    border-radius: 4%;
+    height: 100%;
+    width: 40%;
+    background-color: rgba(162, 155, 254,1.0);
+
+  }
+  .layout_playing {
+    height: 65%;
+  }
+  .playing-avatar {
+    height: 300px;
+    width: 300px;
+    border-radius: 400px;
+    background-position: 50% 50% !important;
+    background-size: cover !important;
+    margin: 10px auto;
+    position: relative;
+  }
+  .rorate {
+    animation: rotation 8s infinite linear;
+  }
+  @keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+  }
+
+  .playing-disc {
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    height: 70px;
+    width: 70px;
+    border-radius: 70px;
+    transform: translate(-50%, -50%);
+    background-color: aliceblue;
+  }
+
+  .playing_info {
+    display: block;
+    text-align: center;
+  }
+
+  .playing_audio {
+    margin: 0 30px;
+  }
+
+  .layout_controls {
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+  }
+  .layout-both {
+    margin: 10px 10px;
+    width: 96%;
+    border: 1px solid white;
+    border-radius: 10px;
+    background-color: white;
+  }
+  .layout_controls-icon {
+    font-size: 30px;
+    line-height: 100px;
+  }
+  
